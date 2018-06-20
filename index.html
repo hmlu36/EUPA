@@ -20,9 +20,8 @@
 
 <body style="background-image: url(img/index/background.jpg)" data-spy="scroll">
 
-
     <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="mainNav">
         <a class="navbar-brand js-scroll-trigger" href="index.html">
             <!-- test-->
             <img src="img/index/EUPA logo.png" class="d-inline-block align-top img-responsive" alt="" /></img>
@@ -33,37 +32,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#intro">關於我們</a>
+                    <a class="nav-link js-scroll-trigger" href="#intro">關於我們</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">產品系列</a>
+                    <a class="nav-link js-scroll-trigger" href="#product">產品系列</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">線上購物</a>
+                    <a class="nav-link js-scroll-trigger" href="#">線上購物</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">銷售據點</a>
+                    <a class="nav-link js-scroll-trigger" href="#">銷售據點</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">維修服務</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Other Pages
-              </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-                        <a class="dropdown-item" href="full-width.html">Full Width Page</a>
-                        <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
-                        <a class="dropdown-item" href="faq.html">FAQ</a>
-                        <a class="dropdown-item" href="404.html">404</a>
-                        <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-                    </div>
+                    <a class="nav-link js-scroll-trigger" href="#">維修服務</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header class="header-area">
+    <header class="header-area" id="intro">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -125,43 +112,68 @@
     <!-- Page Content -->
     <div class="container">
 
-        <section id="intro" class="home-section">
-            <h1 class="my-4">Welcome to Modern Business</h1>
+        <section id="product" class="section-area">
+            <h1 class="my-4 text-center">產品系列</h1>
 
             <!-- Marketing Icons Section -->
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h4 class="card-header">Card Title</h4>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Learn More</a>
+            <div class="col-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#coffee">咖啡文化</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#cooking">美食調理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#food">食物處理</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#gadgage">居家幫手</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="coffee">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
+                                <div class="thumbnail">
+                                    <img class="img-fluid d-block mx-auto" src="img/coffee/mold.png" alt="">
+                                </div>
+                                <h4>EUPA暢銷咖啡機</h4>
+                                <p>TSK-1111<br/>榮獲ISO-9999認證<br/>具高壓萃取義式咖啡功能</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h4 class="card-header">Card Title</h4>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum
-                                sint fuga.
-                            </p>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                    <div class="tab-pane fade in" id="cooking">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
+                                <div class="thumbnail">
+                                    <img class="img-fluid d-block mx-auto" src="img/waffle/waffle.jpg" alt="">
+                                </div>
+                                <h4>Waffle超值機種</h4>
+                                <p>TSK-2222<br/>每分鐘可製作2片Waffle<br/>省電超值機種</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <h4 class="card-header">Card Title</h4>
-                        <div class="card-body">
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
+                    <div class="tab-pane fade in" id="food">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
+                                <div class="thumbnail">
+                                    <img class="img-fluid d-block mx-auto" src="img/food/food.jpg" alt="">
+                                </div>
+                                <h4>高功率食物調理機</h4>
+                                <p>TSK-3333<br/>5分鐘內完成高壓烹飪食材<br/>多種溫度設定，數位控制</p>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                    <div class="tab-pane fade in" id="gadgage">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
+                                <div class="thumbnail">
+                                    <img class="img-fluid d-block mx-auto" src="img/gadgage/gadgage.jpg" alt="">
+                                </div>
+                                <h4>多功能智慧型燉鍋</h4>
+                                <p>TSK-4444<br/>能根據不同的食材加溫<br/>具烹食完成自動斷電功能</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,7 +187,7 @@
         <div class="row">
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project One</a>
@@ -186,7 +198,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project Two</a>
@@ -197,7 +209,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project Three</a>
@@ -208,7 +220,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project Four</a>
@@ -219,7 +231,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project Five</a>
@@ -230,7 +242,7 @@
             </div>
             <div class="col-lg-4 col-sm-6 portfolio-item">
                 <div class="card h-100">
-                    <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
                     <div class="card-body">
                         <h4 class="card-title">
                             <a href="#">Project Six</a>
@@ -290,7 +302,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/vue/vue.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
-</html>
