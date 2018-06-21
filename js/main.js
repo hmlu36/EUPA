@@ -36,7 +36,7 @@ $(function() {
     //console.log(width);
 
     var topParameter = $(".navbar-nav").css('top').replace("px", "");
-    topParameter = (topParameter == "auto") ? "180" : topParameter + 50;
+    topParameter = (topParameter == "auto") ? "80" : topParameter;
     // console.log(topParameter);
 
     // Smooth scrolling using jQuery easing
@@ -69,11 +69,32 @@ $(function() {
 
 new Vue({
     el: '.container',
-    data: {},
+    data: {
+        posts: [],
+        paginate: ['coffees']
+    },
     methods: {
-
+        getData: function(type) {
+            //alert(type);
+            var url = "";
+            if (type == "coffee") {
+                url = "mock/coffee.json";
+            } else if (type == "cooking") {
+                url = "mock/cooking.json";
+            } else if (type == "food") {
+                url = "mock/food.json";
+            } else if (type == "gadgage") {
+                url = "mock/gadgage.json";
+            }
+            axios.get(url, {
+                responseType: 'json'
+            }).then(response => {
+                // alert(JSON.stringify(response.data));
+                this.posts = response.data;
+            });
+        }
     },
     created() {
-        //console.log("test");
+        this.getData("coffee");
     }
 });

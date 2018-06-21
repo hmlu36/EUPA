@@ -108,7 +108,7 @@
             </a>
         </div>
     </header>
-
+    <br/><br/>
     <!-- Page Content -->
     <div class="container">
 
@@ -116,64 +116,44 @@
             <h1 class="my-4 text-center">產品系列</h1>
 
             <!-- Marketing Icons Section -->
-            <div class="col-12">
+            <div class="-100">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#coffee">咖啡文化</a>
+                        <a class="nav-link active" data-toggle="tab" href="#coffee" v-on:click="getData('coffee')">咖啡文化</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#cooking">美食調理</a>
+                        <a class="nav-link" data-toggle="tab" href="#cooking" v-on:click="getData('cooking')">美食調理</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#food">食物處理</a>
+                        <a class="nav-link" data-toggle="tab" href="#food" v-on:click="getData('food')">食物處理</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#gadgage">居家幫手</a>
+                        <a class="nav-link" data-toggle="tab" href="#gadgage" v-on:click="getData('gadgage')">居家幫手</a>
                     </li>
                 </ul>
                 <div class="tab-content">
                     <div class="tab-pane active" id="coffee">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
-                                <div class="thumbnail">
-                                    <img class="img-fluid d-block mx-auto" src="img/coffee/mold.png" alt="">
-                                </div>
-                                <h4>EUPA暢銷咖啡機</h4>
-                                <p>TSK-1111<br/>榮獲ISO-9999認證<br/>具高壓萃取義式咖啡功能</p>
-                            </div>
+                            <v-post :post="post" v-for='post in posts'></v-post>
+                            <v-paginate></v-paginate>
                         </div>
                     </div>
-                    <div class="tab-pane fade in" id="cooking">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
-                                <div class="thumbnail">
-                                    <img class="img-fluid d-block mx-auto" src="img/waffle/waffle.jpg" alt="">
-                                </div>
-                                <h4>Waffle超值機種</h4>
-                                <p>TSK-2222<br/>每分鐘可製作2片Waffle<br/>省電超值機種</p>
-                            </div>
+                    <div class="tab-pane fade in " id="cooking ">
+                        <div class="row ">
+                            <v-post :post="post" v-for='post in posts'></v-post>
+                            <v-paginate></v-paginate>
                         </div>
                     </div>
-                    <div class="tab-pane fade in" id="food">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
-                                <div class="thumbnail">
-                                    <img class="img-fluid d-block mx-auto" src="img/food/food.jpg" alt="">
-                                </div>
-                                <h4>高功率食物調理機</h4>
-                                <p>TSK-3333<br/>5分鐘內完成高壓烹飪食材<br/>多種溫度設定，數位控制</p>
-                            </div>
+                    <div class="tab-pane fade in " id="food ">
+                        <div class="row ">
+                            <v-post :post="post" v-for='post in posts'></v-post>
+                            <v-paginate></v-paginate>
                         </div>
                     </div>
-                    <div class="tab-pane fade in" id="gadgage">
-                        <div class="row">
-                            <div class="col-lg-4 col-sm-6 text-center mb-4" v-for="i in 6">
-                                <div class="thumbnail">
-                                    <img class="img-fluid d-block mx-auto" src="img/gadgage/gadgage.jpg" alt="">
-                                </div>
-                                <h4>多功能智慧型燉鍋</h4>
-                                <p>TSK-4444<br/>能根據不同的食材加溫<br/>具烹食完成自動斷電功能</p>
-                            </div>
+                    <div class="tab-pane fade in " id="gadgage ">
+                        <div class="row ">
+                            <v-post :post="post" v-for='post in posts'></v-post>
+                            <v-paginate></v-paginate>
                         </div>
                     </div>
                 </div>
@@ -181,82 +161,10 @@
         </section>
         <!-- /.row -->
 
-        <!-- Portfolio Section -->
-        <h2>Portfolio Heading</h2>
-
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project One</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Two</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Three</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Four</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Five</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 portfolio-item">
-                <div class="card h-100">
-                    <a href="#"><img class="card-img-top img-fluid" src="http://placehold.it/700x400" alt=""></a>
-                    <div class="card-body">
-                        <h4 class="card-title">
-                            <a href="#">Project Six</a>
-                        </h4>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /.row -->
 
         <!-- Features Section -->
-        <div class="row">
-            <div class="col-lg-6">
+        <div class="row ">
+            <div class="col-lg-6 ">
                 <h2>Modern Business Features</h2>
                 <p>The Modern Business template by Start Bootstrap includes:</p>
                 <ul>
@@ -270,8 +178,8 @@
                 </ul>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
             </div>
-            <div class="col-lg-6">
-                <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+            <div class="col-lg-6 ">
+                <img class="img-fluid rounded " src="http://placehold.it/700x450 " alt=" ">
             </div>
         </div>
         <!-- /.row -->
@@ -279,12 +187,12 @@
         <hr>
 
         <!-- Call to Action Section -->
-        <div class="row mb-4">
-            <div class="col-md-8">
+        <div class="row mb-4 ">
+            <div class="col-md-8 ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
             </div>
-            <div class="col-md-4">
-                <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+            <div class="col-md-4 ">
+                <a class="btn btn-lg btn-secondary btn-block " href="# ">Call to Action</a>
             </div>
         </div>
 
@@ -292,19 +200,22 @@
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+    <footer class="py-5 bg-dark ">
+        <div class="container ">
+            <p class="m-0 text-center text-white ">Copyright &copy; Your Website 2018</p>
         </div>
         <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/vue/vue.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="vendor/vue/vue.min.js "></script>
+    <script src="vendor/vue/axios/axios.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="vendor/vue/custom/vue-post.js "></script>
+    <script src="vendor/vue/custom/vue-paginate.js "></script>
+    <script src="vendor/jquery/jquery-easing/jquery.easing.min.js "></script>
+    <script src="js/main.js "></script>
 </body>
