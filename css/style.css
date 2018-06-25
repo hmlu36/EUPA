@@ -95,7 +95,7 @@ body {
 
 @media only screen and (min-width: 991px) and (max-width: 1366px) {
     .header-area {
-        padding-top: 130px;
+        padding-top: 90px;
         padding-bottom: 100px;
         height: auto;
     }
@@ -150,7 +150,7 @@ body {
 
 @media only screen and (min-width: 991px) and (max-width: 1366px) {
     .carousel-item {
-        height: 40vh;
+        height: 80vh;
         min-height: 80%;
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
@@ -190,11 +190,6 @@ body {
     display: block;
     position: relative;
     z-index: 120;
-}
-
-.thumbnail img {
-    width: 30%;
-    height: auto;
 }
 
 .thumbnail:hover {
@@ -260,39 +255,6 @@ body {
     color: #fff;
 }
 
-.article-read .article-title {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.article-read .article-metas {
-    display: inline-block;
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-.article-read .article-metas .meta {
-    float: left;
-    padding-right: 15px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #999;
-    letter-spacing: 1px;
-}
-
-.article-read .article-picture {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.article-read .article-picture img {
-    width: 100%;
-}
-
-.article-read .article-content {
-    line-height: 28px;
-}
-
 
 /*
  post裡的tab
@@ -344,10 +306,8 @@ a:focus {
 }
 
 .tab .tab-content {
-    font-size: 14px;
     color: #686868;
     line-height: 25px;
-    text-align: left;
     padding: 5px 20px;
 }
 

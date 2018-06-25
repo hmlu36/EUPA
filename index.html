@@ -32,13 +32,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#intro">關於我們</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">關於我們</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#product">產品系列</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">線上購物</a>
+                    <a class="nav-link js-scroll-trigger" href="#shopping">線上購物</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#">銷售據點</a>
@@ -50,7 +50,7 @@
         </div>
     </nav>
 
-    <header class="header-area" id="intro">
+    <header class="header-area">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -112,25 +112,45 @@
     <!-- Page Content -->
     <div class="container">
 
+        <section id="about" class="section-area">
+            <div class="row mx-auto">
+                <img src="img/about/4-01.jpg" class="content-image img-fluid d-block mx-auto">
+            </div>
+            <div class="w-100 mx-auto">
+                <br/><br/>
+                <p>EUPA誕生於1985年，是燦坤跨國集團下的著名家電品牌</p>
+                <p>EUPA是歐風設計 EUROPE DESIGN與亞洲時尚ASIAN STYLE的合二為一<br/> 秉持著與時尚家居相融合的設計理念，將北歐簡約、優雅、環保等生活精髓融入產品研發中<br/>重多功能的多元化延伸，提供世界各地消費者時尚與多功能的環保家電<br/> 幫助每一個蹟亭有效利用資源，簡化家務，共能創造生活的喜悅與家電全新精緻體驗
+                </p>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 col-md-offset-8 col-lg-offset-8"></div>
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                    <img src="img/about/潘董簽名.png" class="img-fluid img-responsive">
+                </div>
+            </div>
+        </section>
+
         <section id="product" class="section-area">
             <h1 class="my-4 text-center">產品系列</h1>
-
-            <!-- Marketing Icons Section -->
-            <div class="-100">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-toggle="tab" href="#coffee" v-on:click="getData('coffee')">咖啡文化</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#cooking" v-on:click="getData('cooking')">美食調理</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#food" v-on:click="getData('food')">食物處理</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-toggle="tab" href="#gadgage" v-on:click="getData('gadgage')">居家幫手</a>
-                    </li>
-                </ul>
+            <div class="container">
+                <div class="w-100">
+                    <ul class="nav nav-tabs mb-3 justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#coffee" v-on:click="getData('coffee')">咖啡文化</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#cooking" v-on:click="getData('cooking')">美食調理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#food" v-on:click="getData('food')">食物處理</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#gadgage" v-on:click="getData('gadgage')">居家幫手</a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="coffee">
                         <div class="row">
@@ -159,7 +179,37 @@
                 </div>
             </div>
         </section>
-        <!-- /.row -->
+
+
+
+        <section id="shopping" class="section-area">
+            <h1 class="my-4 text-center">線上購物</h1>
+            <div class="row">
+                <div class="text-center col-6 thumbnail">
+                    <a href="https://udesign.udnfunlife.com/mall/Cc1a00.do" target="_blank"><img src="img/shop/shop1.png" class="img-responsive center-block col-6"></a>
+                </div>
+                <div class="text-center col-6 thumbnail">
+                    <a href="https://www.citiesocial.com" target="_blank"><img src="img/shop/shop2.jpg" class="img-responsive center-block col-6"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center col-6 thumbnail">
+                    <a href="http://www.books.com.tw/" target="_blank"><img src="img/shop/shop3.png" class="img-responsive center-block col-6"></a>
+                </div>
+                <div class="text-center col-6 thumbnail">
+                    <a href="http://www.momoshop.com.tw" target="_blank"><img src="img/shop/shop4.png" class="img-responsive center-block col-6"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center col-6 thumbnail">
+                    <a href="http://www.eslitespectrum.com.tw" target="_blank"><img src="img/shop/shop5.png" class="img-responsive center-block col-6"></a>
+                </div>
+                <div class="text-center col-6 thumbnail">
+                    <a href="https://shopee.tw/" target="_blank"><img src="img/shop/shop6.jpg" class="img-responsive center-block col-6"></a>
+                </div>
+
+            </div>
+        </section>
 
     </div>
     <!-- /.container -->
