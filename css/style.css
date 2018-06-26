@@ -204,7 +204,6 @@ body {
 
 .article-read {
     display: none;
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -260,12 +259,6 @@ body {
  post裡的tab
 */
 
-a:hover,
-a:focus {
-    outline: none;
-    text-decoration: none;
-}
-
 .tab .nav-tabs {
     display: inline-block;
     background: #fff;
@@ -291,29 +284,11 @@ a:focus {
     transition: all 0.5s ease 0s;
 }
 
-.tab .nav-tabs li a:hover {
-    background: #ffa399;
-    color: #fff;
-    border: none;
-}
-
-.tab .nav-tabs li.active a,
-.tab .nav-tabs li.active a:focus,
-.tab .nav-tabs li.active a:hover {
+.tab .nav-tabs li a:hover,
+.tab .nav-tabs li a:focus {
     border: none;
     background: #ffa399;
     color: #fff;
-}
-
-.tab .tab-content {
-    color: #686868;
-    line-height: 25px;
-    padding: 5px 20px;
-}
-
-.tab .tab-content h3 {
-    font-size: 22px;
-    color: #5b5a5a;
 }
 
 @media only screen and (max-width: 480px) {
@@ -324,5 +299,51 @@ a:focus {
         width: 100%;
         text-align: center;
         margin-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width: 1367px) {
+    .post-content {
+        color: #686868;
+        padding-top: 60px;
+        padding: 0px 250px;
+    }
+    .post-content h3 {
+        font-size: 22px;
+        color: #5b5a5a;
+    }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1366px) {
+    .post-content {
+        color: #686868;
+        padding-top: 60px;
+        padding: 0px 250px;
+    }
+    .post-content h3 {
+        font-size: 20px;
+        color: #5b5a5a;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 990px) {
+    .post-content {
+        color: #686868;
+        padding-top: 40px;
+    }
+    .post-content h3 {
+        font-size: 18px;
+        color: #5b5a5a;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .post-content {
+        color: #686868;
+        padding-top: 30px;
+    }
+    .post-content h3 {
+        font-size: 18px;
+        color: #5b5a5a;
     }
 }

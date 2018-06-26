@@ -1,10 +1,19 @@
 {
 	"mold": "TSK-1111",
-	"path": "img/coffee/mold.png",
+	"path": "img/coffee/coffee6.jpg",
 	"title": "EUPA暢銷咖啡機",
 	"content": "EUPA\nPUMP ESPRESSO\n高壓義式咖啡機\n\n我家就是我的咖啡館\n輕鬆煮出職人好咖啡\n",
 	"recipeTitle": "香蕉咖啡奶昔",
 	"recipePath": "img/coffee/coffee3.jpg",
-	"recipeContent": "香蕉不僅僅適合搭配巧克力，與咖啡的結合也是別有一番風味\n簡單利用香蕉、牛奶、咖啡粉就能簡單做出好喝的奶昔喔!\n\n訣竅提示\n可使用凍香蕉取代冰塊，奶昔更香濃"
+	"recipeContent": "香蕉不僅僅適合搭配巧克力，與咖啡的結合也是別有一番風味\n簡單利用香蕉、牛奶、咖啡粉就能簡單做出好喝的奶昔喔!\n\n訣竅提示\n可使用凍香蕉取代冰塊，奶昔更香濃",
+	"designTitle": "EUPA暢銷咖啡機",
+	"designPath": "img/coffee/coffee7.jpg",
+	"designContent": "慎選優質新鮮的研磨咖啡粉\n再運用定溫及幫浦系統結構的咖啡機\n您可以在適合的壓力、溫度下，得到理想的成果",
+	"storyTitle": "EUPA暢銷咖啡機故事",
+	"storyPath": "img/coffee/coffee8.jpg",
+	"storyContent": "完美是一種生活態度\n是一種鞭策我們時時刻刻不斷努力的動力\n然而在嚐過完美的滋味後\n人們總不能忘情希望那一刻能不斷重複",
+	"specTitle": "EUPA暢銷咖啡機規格",
+	"specPath": "img/coffee/coffee5.jpg",
+	"specContent": "商品尺寸約:20.5x15.5x23(cm)\n商品重量約:1.2kg\n咖啡粉量 4匙 約28克\n540ml容量，分享香純最剛好"
 	
 }
