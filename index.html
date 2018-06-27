@@ -12,6 +12,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/SmartWizard/css/smart_wizard.min.css" rel="stylesheet">
+    <link href="vendor/SmartWizard/css/smart_wizard_theme_dots.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -41,7 +43,7 @@
                     <a class="nav-link js-scroll-trigger" href="#shopping">線上購物</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">銷售據點</a>
+                    <a class="nav-link js-scroll-trigger" href="#market">銷售據點</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#">維修服務</a>
@@ -179,8 +181,6 @@
             </div>
         </section>
 
-
-
         <section id="shopping" class="section-area">
             <h1 class="my-4 text-center">線上購物</h1>
             <div class="row">
@@ -210,6 +210,32 @@
             </div>
         </section>
 
+
+
+        <section id="market" class="section-area">
+            <div class="card">
+                <div class="card-body mb-4">
+                    <!-- Stepper -->
+                    <div class="steps-form w-100">
+                        <div class="steps-row setup-panel">
+                            <div class="steps-step">
+                                <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
+                                <p>Step 1</p>
+                            </div>
+                            <div class="steps-step">
+                                <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                <p>Step 2</p>
+                            </div>
+                            <div class="steps-step">
+                                <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                <p>Step 3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <!-- /.container -->
 
@@ -228,9 +254,10 @@
     <script src="vendor/vue/axios/axios.min.js "></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/vue/custom/vue-post.js "></script>
-    <script src="vendor/vue/custom/vue-paginate.js "></script>
-    <script src="vendor/jquery/jquery.blockUI.js "></script>
-    <script src="vendor/jquery/jquery-easing/jquery.easing.min.js "></script>
+    <script src="vendor/vue/custom/vue-post.js"></script>
+    <script src="vendor/vue/custom/vue-paginate.js"></script>
+    <script src="vendor/jquery/jquery.blockUI.js"></script>
+    <script src="vendor/jquery/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/SmartWizard/js/jquery.smartWizard.min.js"></script>
     <script src="js/main.js "></script>
 </body>

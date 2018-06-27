@@ -64,6 +64,17 @@ $(function() {
         target: '#mainNav',
         offset: Number(topParameter)
     });
+
+
+
+    // Smart Wizard
+    $('#smartwizard').smartWizard({
+        selected: 0,
+        theme: 'dots',
+        transitionEffect: 'fade',
+        showStepURLhash: true
+    });
+
 });
 
 
