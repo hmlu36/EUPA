@@ -1,4 +1,26 @@
 $(function() {
+    /*
+        var width = $(window).width();
+        var height = $(window).height();
+        $.blockUI({
+            message: "<img src='img/index/" + (width > height ? "EUPA home.jpg" : "EUPA home-vertical.jpg") + "' style='width:auto ; height:100%;'/>",
+            css: {
+                top: 0,
+                left: 0,
+                width: width,
+                height: height,
+                backgroundColor: '#F8E13B',
+                '-webkit-border-radius': '10px',
+                '-moz-border-radius': '10px',
+            }
+        });
+        $(".navbar").hide();
+
+        setTimeout(function() {
+            $(".navbar").show();
+            $.unblockUI();
+        }, 2500);
+    */
 
     // navbar toggle使用
     $(".navbar-toggler").click(function() {
@@ -31,8 +53,6 @@ $(function() {
         }
     });
 
-    var width = $(window).width();
-    var height = $(window).height();
     //console.log(width);
 
     var topParameter = $(".navbar-nav").css('top').replace("px", "");
@@ -67,14 +87,26 @@ $(function() {
 
 
 
-    // Smart Wizard
-    $('#smartwizard').smartWizard({
-        selected: 0,
-        theme: 'dots',
-        transitionEffect: 'fade',
-        showStepURLhash: true
+    var navListItems = $('div.setup-panel div a'),
+        allWells = $('.setup-content');
+
+    allWells.hide();
+
+    navListItems.click(function(e) {
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this);
+
+        if (!$item.hasClass('disabled')) {
+            navListItems.removeClass('btn-indigo').addClass('btn-default');
+            $item.addClass('btn-indigo');
+            allWells.hide();
+            $target.show();
+            $target.find('input:eq(0)').focus();
+        }
     });
 
+    $('div.setup-panel div a.btn-indigo').trigger('click');
 });
 
 

@@ -12,8 +12,6 @@
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/SmartWizard/css/smart_wizard.min.css" rel="stylesheet">
-    <link href="vendor/SmartWizard/css/smart_wizard_theme_dots.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
@@ -46,7 +44,7 @@
                     <a class="nav-link js-scroll-trigger" href="#market">銷售據點</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#">維修服務</a>
+                    <a class="nav-link js-scroll-trigger" href="#maintenance">維修服務</a>
                 </li>
             </ul>
         </div>
@@ -64,37 +62,37 @@
             <div class="carousel-inner" role="listbox">
                 <!-- Slide One - Set the background image for this slide in the line below -->
                 <div class="carousel-item active" style="background-image: url('img/slider/TSK-P103NBDQ.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
                 <!-- Slide Two - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('img/slider/TSK-2625ST.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
                 <!-- Slide Three - Set the background image for this slide in the line below -->
                 <div class="carousel-item" style="background-image: url('img/slider/TSK-2309BPZ.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
 
                 <div class="carousel-item" style="background-image: url('img/slider/TSK-2265GW.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
 
                 <div class="carousel-item" style="background-image: url('img/slider/TSK-2193W.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
 
                 <div class="carousel-item" style="background-image: url('img/slider/TSK-1837B.jpg')">
-                    <div class="carousel-caption d-md-block">
+                    <div class="carousel-caption">
                         <a href="#" class="button">查看</a>
                     </div>
                 </div>
@@ -210,32 +208,97 @@
             </div>
         </section>
 
-
-
         <section id="market" class="section-area">
+            <h1 class="my-4 text-center">銷售據點</h1>
             <div class="card">
                 <div class="card-body mb-4">
+                    <h4 class="my-4 text-center">全球據點</h4>
+
                     <!-- Stepper -->
-                    <div class="steps-form w-100">
+                    <div class="steps-form">
                         <div class="steps-row setup-panel">
                             <div class="steps-step">
-                                <a href="#step-9" type="button" class="btn btn-indigo btn-circle">1</a>
-                                <p>Step 1</p>
+                                <a href="#step-1" type="button" class="btn btn-indigo btn-circle">1</a>
+                                <p>台灣</p>
                             </div>
                             <div class="steps-step">
-                                <a href="#step-10" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                                <p>Step 2</p>
+                                <a href="#" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                                <p>中國</p>
                             </div>
                             <div class="steps-step">
-                                <a href="#step-11" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
-                                <p>Step 3</p>
+                                <a href="#" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                                <p>日本</p>
+                            </div>
+                            <div class="steps-step">
+                                <a href="#" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                                <p>其他</p>
                             </div>
                         </div>
+                    </div>
+
+                    <!-- First Step -->
+                    <div class="row setup-content" id="step-1">
+                        <div class="col-3 text-center">
+                            <p>台北<br/>新竹<br/>台中<br/>台南<br/>高雄</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p>北京<br/>上海<br/>廈門</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p>東京<br/>大阪<br/>關西</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <p>紐約<br/>馬德里<br/>吉隆坡</p>
+                        </div>
+                    </div>
+
+                    <!-- Second Step -->
+                    <div class="row setup-content" id="step-2">
+                        <div class="col-3 text-center offset-3">
+                            <p>北京<br/>上海<br/>廈門</p>
+                        </div>
+                    </div>
+
+                    <!-- Third Step -->
+                    <div class="row setup-content" id="step-3">
+                        <div class="col-3 text-center offset-6">
+                            <p>東京<br/>大阪<br/>關西</p>
+                        </div>
+                    </div>
+                    <!-- Third Step -->
+                    <div class="row setup-content" id="step-4">
+                        <div class="col-3 text-center offset-9">
+                            <p>紐約<br/>馬德里<br/>吉隆坡</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-foot">
+                    <div class="w-100 text-center">
+                        <a href="https://www.facebook.com" target="_blank"><img src="img/market/F.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="https://www.instagram.com" target="_blank"><img src="img/market/I.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="https://www.youtube.com" target="_blank"><img src="img/market/Y.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="https://path.com" target="_blank"><img src="img/market/P.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="https://access.line.me/dialog/oauth/weblogin?client_id=1459630796&redirect_uri=https://business.line.me/auth?redirectUri%3Dhttps://business.line.me/sso/auth?response_type%253Dcode%2526scope%253Dopenid%2526client_id%253D1%2526redirect_uri%253Dhttps%25253A%25252F%25252Fadmin-official.line.me%25252Fs%2526state%253D2Tfvbe6cWgKq&response_type=code&state=1Rj80N"
+                            target="_blank"><img src="img/market/L.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="https://wx.qq.com/wechat?lang=zh_TW" target="_blank"><img src="img/market/W.png" class="img-responsive img-link"></a>&nbsp;
+                        <a href="#" v-on:click="window.open('mailto:test@example.com');"><img src="img/market/M.png" class="img-responsive img-link"></a>
                     </div>
                 </div>
             </div>
         </section>
 
+
+        <section id="maintenance" class="section-area">
+            <h1 class="my-4 text-center">維修服務</h1>
+            <div>
+                <p>經確認為故障品後，客戶填寫線上維修單，經維修中心修復完畢後，再通知客戶。</p>
+                <p>貨品於保固期間內為免費服務，不含配件（如變壓器）及天災如（泡水）等損壞。</p>
+                <p>經檢驗後，若須收費維修，本公司將會事先報價，由客戶自行決定是否送修。</p>
+                <p>客戶可經由維修進度查詢依維修編號或是聯絡人電子郵件及電話查詢維修進度。</p>
+                <p>各項贈品不在本公司服務範圍內，請洽各贈品之原廠。</p>
+            </div>
+        </section>
+        <div class="w-100"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
     </div>
     <!-- /.container -->
 
@@ -258,6 +321,5 @@
     <script src="vendor/vue/custom/vue-paginate.js"></script>
     <script src="vendor/jquery/jquery.blockUI.js"></script>
     <script src="vendor/jquery/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/SmartWizard/js/jquery.smartWizard.min.js"></script>
     <script src="js/main.js "></script>
 </body>

@@ -118,12 +118,14 @@ body {
 }
 
 .button {
+    /*
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
+    */
     letter-spacing: 1px;
     display: inline-block;
-    padding: 8px 32px;
+    padding: 8px 24px;
     border-radius: 50px;
     transition: 0.5s;
     margin: 10px;
@@ -197,10 +199,10 @@ body {
 }
 
 
-/*
+/*--------------------------------------------------------------
     post裡的彈跳視窗 
     article read
-*/
+--------------------------------------------------------------*/
 
 .article-read {
     display: none;
@@ -255,9 +257,9 @@ body {
 }
 
 
-/*
- post裡的tab
-*/
+/*--------------------------------------------------------------
+    post裡的tab
+--------------------------------------------------------------*/
 
 .tab .nav-tabs {
     display: inline-block;
@@ -349,7 +351,12 @@ body {
     }
 }
 
-steps-form {
+
+/*--------------------------------------------------------------
+    銷售據點 wizard
+--------------------------------------------------------------*/
+
+.steps-form {
     display: table;
     width: 100%;
     position: relative;
@@ -366,7 +373,7 @@ steps-form {
     content: " ";
     width: 100%;
     height: 1px;
-    background-color: #ccc;
+    background-color: gray;
 }
 
 .steps-form .steps-row .steps-step {
@@ -393,4 +400,12 @@ steps-form {
     line-height: 1.428571429;
     border-radius: 15px;
     margin-top: 0;
+    background-color: #2198E8 !important;
+    color: white !important;
+}
+
+.img-link {
+    flex: 25%;
+    max-width: 5%;
+    padding: 0 4px;
 }
