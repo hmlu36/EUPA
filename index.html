@@ -52,48 +52,12 @@
     <header class="header-area">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselExampleIndicators" v-bind:data-slide-to="index" v-bind:class="index == 0 ? 'active' : ''" v-for="(slider, index) in sliders"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-                <!-- Slide One - Set the background image for this slide in the line below -->
-                <div class="carousel-item active" style="background-image: url('img/slider/TSK-P103NBDQ.jpg')">
+                <div v-bind:class="['carousel-item', index == 0 ? 'active' : '']" v-bind:style="{ 'background-image': 'url(img/slider/' + slider.mold + ')' }" v-for="(slider, index) in sliders">
                     <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
-                    </div>
-                </div>
-                <!-- Slide Two - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('img/slider/TSK-2625ST.jpg')">
-                    <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
-                    </div>
-                </div>
-                <!-- Slide Three - Set the background image for this slide in the line below -->
-                <div class="carousel-item" style="background-image: url('img/slider/TSK-2309BPZ.jpg')">
-                    <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url('img/slider/TSK-2265GW.jpg')">
-                    <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url('img/slider/TSK-2193W.jpg')">
-                    <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
-                    </div>
-                </div>
-
-                <div class="carousel-item" style="background-image: url('img/slider/TSK-1837B.jpg')">
-                    <div class="carousel-caption">
-                        <a href="#" class="button">查看</a>
+                        <a href="#" class="button" v-on:click="headerContent(slider)">查看</a>
                     </div>
                 </div>
             </div>

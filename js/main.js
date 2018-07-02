@@ -109,6 +109,69 @@ $(function() {
     $('div.setup-panel div a.btn-indigo').trigger('click');
 });
 
+new Vue({
+    el: '.header-area',
+    data: {
+        sliders: [
+            { "mold": "TSK-P103NBDQ.jpg" },
+            { "mold": "TSK-2625ST.jpg" },
+            { "mold": "TSK-2309BPZ.jpg" },
+            { "mold": "TSK-2265GW.jpg" },
+            { "mold": "TSK-2193W.jpg" },
+            { "mold": "TSK-1837B.jpg" }
+        ]
+    },
+    methods: {
+        headerContent(slider) {
+            // 談
+            let $element =
+                '<div class="article-read text-left">                                                                                 ' +
+                '    <div class="article-read-inner">                                                                                 ' +
+                '        <div class="article-back">                                                                                   ' +
+                '            <a class="btn btn-outline-primary"><i class="ion ion-chevron-left"></i> Back</a>                         ' +
+                '        </div>                                                                                                       ' +
+                '    </div>                                                                                                           ' +
+                '    <div class="w-100"><img src = "img/slider/{mold}" class="img-fluid" style=" width：100％"> </div>' +
+                '</div>                                                                                                               ';
+
+            let reg = /{([a-zA-Z0-9]+)}/g,
+                res = [],
+                element = $element;
+            while (match = reg.exec($element)) {
+                element = element.replace('{' + match[1] + '}', slider[match[1]]);
+            }
+
+            $.blockUI({
+                message: element,
+                css: {
+                    top: 0,
+                    left: 0,
+                    width: $(window).width(),
+                    height: $(window).height(),
+                    overflow: 'scroll',
+                    cursor: 'default'
+                }
+            });
+
+            $("nav").hide();
+
+            $(".article-read").fadeIn();
+            $(document).on("click", ".article-back .btn", function() {
+                $(".article-read").fadeOut(function() {
+                    $(".article-read").remove();
+                    $("nav").show();
+                    $.unblockUI();
+                });
+                return false;
+            });
+        }
+
+    },
+    created() {
+
+    }
+});
+
 
 new Vue({
     el: '.container',

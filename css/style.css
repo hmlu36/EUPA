@@ -135,7 +135,19 @@ body {
 
 .button:hover {
     background: #fff;
-    color: #18d26e;
+    color: #2a4235;
+}
+
+.carousel-caption {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+}
+
+.carousel-inner:hover .carousel-caption {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
 }
 
 @media only screen and (min-width: 1367px) {
@@ -150,10 +162,9 @@ body {
     }
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1366px) {
+@media only screen and (min-width: 1081px) and (max-width: 1366px) {
     .carousel-item {
         height: 80vh;
-        min-height: 80%;
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -162,10 +173,20 @@ body {
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 990px) {
+@media only screen and (min-width: 1025px) and (max-width: 1080px) {
+    .carousel-item {
+        height: 40vh;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
     .carousel-item {
         height: 60vh;
-        min-height: 80%;
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
