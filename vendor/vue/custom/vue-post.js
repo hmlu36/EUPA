@@ -31,57 +31,57 @@
                 '       </div>                                                                                                        ' +
                 '       <div class="tab-content post-content">                                                                        ' +
                 '           <div class="tab-pane" id="Section1">                                                                      ' +
-                '               <div class="row">                                                                                     ' +
-                '                   <div class="col-md-6 text-right">                                                                 ' +
+                '               <div class="row my-4">                                                                                     ' +
+                '                   <div class="col-lg-8 text-right">                                                                 ' +
                 '                       <img class="img-fluid" src="{path}">                                                          ' +
                 '                   </div>                                                                                            ' +
-                '                   <div class="col-md-6">                                                                            ' +
-                '                       <h3 class="offset-md-2">{title}</h3>                                                          ' +
-                '                       <p class="offset-md-2" style="white-space: pre">{content}</p>                                 ' +
+                '                   <div class="col-lg-4">                                                                            ' +
+                '                       <h3>{title}</h3>                                                          ' +
+                '                       <p style="white-space: pre">{content}</p>                                 ' +
                 '                   </div>                                                                                            ' +
                 '               </div>                                                                                                ' +
                 '           </div>                                                                                                    ' +
                 '           <div class="tab-pane" id="Section2">                                                                      ' +
-                '               <div class="row">                                                                                     ' +
-                '                   <div class="col-md-6 text-right">                                                                 ' +
+                '               <div class="row my-4">                                                                                     ' +
+                '                   <div class="col-lg-8 text-right">                                                                 ' +
                 '                       <img class="img-fluid" src="{recipePath}">                                                    ' +
                 '                   </div>                                                                                            ' +
-                '                   <div class="col-md-6">                                                                            ' +
-                '                       <h3 class="offset-md-2">{recipeTitle}</h3>                                                    ' +
-                '                       <p class="offset-md-2" style="white-space: pre">{recipeContent}</p>                           ' +
+                '                   <div class="col-lg-4">                                                                            ' +
+                '                       <h3>{recipeTitle}</h3> <br/>                                                                       ' +
+                '                       <p style="white-space: pre">{recipeContent}</p>                                               ' +
                 '                   </div>                                                                                            ' +
                 '               </div>                                                                                                ' +
                 '           </div>                                                                                                    ' +
                 '           <div class="tab-pane" id="Section3">                                                                      ' +
-                '               <div class="row">                                                                                     ' +
-                '                   <div class="col-md-6 text-right">                                                                 ' +
+                '               <div class="row my-4">                                                                                     ' +
+                '                   <div class="col-lg-8 text-right">                                                                 ' +
                 '                       <img class="img-fluid" src="{designPath}">                                                    ' +
                 '                   </div>                                                                                            ' +
-                '                   <div class="col-md-6">                                                                            ' +
-                '                       <h3 class="offset-md-2">{designTitle}</h3>                                                    ' +
-                '                       <p class="offset-md-2" style="white-space: pre">{designContent}</p>                           ' +
+                '                   <div class="col-lg-4">                                                                            ' +
+                '                       <h3>{designTitle}</h3>                                                    ' +
+                '                       <p style="white-space: pre">{designContent}</p>                           ' +
                 '                   </div>                                                                                            ' +
                 '               </div>                                                                                                ' +
                 '           </div>                                                                                                    ' +
                 '           <div class="tab-pane" id="Section4">                                                                      ' +
-                '               <div class="row">                                                                                     ' +
-                '                   <div class="col-md-6 text-right">                                                                 ' +
+                '               <div class="row my-4">                                                                                     ' +
+                '                   <div class="col-lg-8 text-right">                                                                 ' +
                 '                       <img class="img-fluid" src="{storyPath}">                                                     ' +
                 '                   </div>                                                                                            ' +
-                '                   <div class="col-md-6">                                                                            ' +
-                '                       <h3 class="offset-md-2">{storyTitle}</h3>                                                     ' +
-                '                       <p class="offset-md-2" style="white-space: pre">{storyContent}</p>                            ' +
+                '                   <div class="col-lg-4">                                                                            ' +
+                '                       <h3>{storyTitle}</h3>                                                     ' +
+                '                       <p style="white-space: pre">{storyContent}</p>                            ' +
                 '                   </div>                                                                                            ' +
                 '               </div>                                                                                                ' +
                 '           </div>                                                                                                    ' +
                 '           <div class="tab-pane" id="Section5">                                                                      ' +
-                '               <div class="row">                                                                                     ' +
-                '                   <div class="col-md-6 text-right">                                                                 ' +
+                '               <div class="row my-4">                                                                                     ' +
+                '                   <div class="col-lg-8 text-right">                                                                 ' +
                 '                       <img class="img-fluid" src="{specPath}">                                                      ' +
                 '                   </div>                                                                                            ' +
-                '                   <div class="col-md-6">                                                                            ' +
-                '                       <h3 class="offset-md-2">{specTitle}</h3>                                                      ' +
-                '                       <p class="offset-md-2" style="white-space: pre">{specContent}</p>                             ' +
+                '                   <div class="col-lg-4">                                                                            ' +
+                '                       <h3>{specTitle}</h3>                                                      ' +
+                '                       <p style="white-space: pre">{specContent}</p>                             ' +
                 '                   </div>                                                                                            ' +
                 '               </div>                                                                                                ' +
                 '           </div>                                                                                                    ' +
